@@ -30,16 +30,16 @@ public class App {
         double result;
         switch (op) {
             case "+":
-                result = nr1 + nr2;
+                result = CalcHelper.addValues(nr1, nr2);
                 break;
             case "-":
-                result = nr1 - nr2;
+                result = CalcHelper.substractValues(nr1, nr2);
                 break;
             case "*":
-                result = nr1 * nr2;
+                result = CalcHelper.multipleValues(nr1, nr2);
                 break;
             case "/":
-                result = nr1 / nr2;
+                result = CalcHelper.divideValues(nr1, nr2);
                 break;
             default:
                 System.out.println("Error chose operators valid :) ");
